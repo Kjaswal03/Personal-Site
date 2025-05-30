@@ -3319,10 +3319,13 @@ input, select, textarea {
 .image-carousel {
 	position: relative;
 	width: 100%;
-	height: 500px; /* Increased even more for better visibility */
+	height: 450px; /* Adjusted height for better mobile/desktop balance */
 	overflow: hidden;
 	border-radius: 4px;
-	background-color: #fff; /* Clean white background */
+	background-color: #f8f8f8; /* Light background for consistency */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .carousel-container {
@@ -3334,8 +3337,9 @@ input, select, textarea {
 .carousel-image {
 	min-width: 100%;
 	height: 100%;
-	object-fit: cover; /* Back to cover for full size */
-	object-position: center top; /* Focus on the top/center of images */
+	object-fit: contain; /* Use contain to preserve aspect ratios */
+	object-position: center;
+	background-color: #f8f8f8; /* Light background for mobile screenshots */
 }
 
 .carousel-nav {
